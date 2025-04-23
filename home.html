@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say No To Drugs - Kerala</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #dc3545;
+            --secondary-color: #0d6efd;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .logo-container {
+            max-width: 300px;
+            margin: 0 auto 30px;
+        }
+        
+        .features-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .about-section {
+            padding: 60px 0;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: white !important;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+        
+        .nav-link {
+            font-weight: 600;
+            color: #333 !important;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+        
+        .btn-custom {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+        
+        .btn-custom:hover {
+            background-color: #c82333;
+            border-color: #c82333;
+            transform: scale(1.05);
+        }
+        
+        .btn-secondary-custom {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 10px 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-secondary-custom:hover {
+            background-color: #0b5ed7;
+            border-color: #0b5ed7;
+        }
+        
+        .stats-counter {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            font-size: 80px;
+            color: rgba(220, 53, 69, 0.1);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-family: Georgia, serif;
+        }
+        
+        .quote-text {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .highlight-box {
+            background-color: rgba(220, 53, 69, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .slogan {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            display: inline-block;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .brand-colored {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SAY NO TO DRUGS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="logo-container mb-4">
+                <img src="images/no drugs.jpeg" alt="Say No To Drugs Logo" class="img-fluid">
+            </div>
+            <h1 class="display-4 fw-bold mb-2">SAY NO TO DRUGS</h1>
+            <p class="lead mb-5">Join our mission to create a drug-free Kerala through awareness, education and community action</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#resources" class="btn btn-primary btn-lg btn-custom">Learn More</a>
+                <a href="#contact" class="btn btn-light btn-lg">Get Help Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Campaign Image Section -->
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img src="images/say no drugs.jpeg" alt="Say No To Drugs Campaign" class="img-fluid mb-4" style="max-height: 400px;">
+                    <h2 class="mb-4">Choose Life, Not Drugs</h2>
+                    <p class="lead">Drugs destroy lives, families, and communities. Together, we can build a healthier future for Kerala.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">The Impact of Drug Abuse</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="stats-counter">70%</div>
+                    <p>Increase in drug-related cases among youth in Kerala</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="stats-counter">8,500+</div>
+                    <p>Drug-related arrests in Kerala last year</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-counter">60%</div>
+                    <p>Of addicts started before age 18</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="features-section" id="resources">
+        <div class="container">
+            <h2 class="text-center mb-2">Our Resources</h2>
+            <p class="text-center mb-5">Education and support to help combat drug abuse</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <!-- <i class="fas fa-book-open"></i> -->
+                            <img src="images/education.jpg" alt="Say No To Drugs Campaign" class="img-fluid mb-4" style="max-height: 150px;">
+                        </div>
+                        <h4>Education Programs</h4>
+                        <p>School and college awareness programs designed to educate youth about the dangers of drug use.</p>
+                        <a href="#" class="btn btn-outline-danger mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <!-- <i class="fas fa-hands-helping"></i> -->
+                            <img src="images/support service.jpeg" alt="Say No To Drugs Campaign" class="img-fluid mb-4" style="max-height: 150px;">
+               
+                        </div>
+                        <h4>Support Services</h4>
+                        <p>Counseling and rehabilitation services for those affected by drug addiction and their families.</p>
+                        <a href="#" class="btn btn-outline-danger mt-3">Get Help</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <!-- <i class="fas fa-users"></i> -->
+                            <img src="images/community.jpeg " alt="Say No To Drugs Campaign" class="img-fluid mb-4" style="max-height: 150px;">
+               
+                        </div>
+                        <h4>Community Outreach</h4>
+                        <p>Grassroots initiatives empowering communities to take action against drug trafficking and abuse.</p>
+                        <a href="#" class="btn btn-outline-danger mt-3">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/image.to say no" alt="About Our Initiative" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <div class="slogan">Our Mission</div>
+                    <h2 class="mb-4">Fighting For A Drug-Free Kerala</h2>
+                    <p class="lead">We are committed to eliminating drug abuse through education, prevention, and community action.</p>
+                    <div class="highlight-box">
+                        <p>"Say No To Drugs" is a state-wide initiative working in collaboration with schools, colleges, government agencies, and local communities to create awareness about the dangers of drug abuse and provide support to those affected.</p>
+                    </div>
+                    <p>Our comprehensive approach includes educational programs, counseling services, rehabilitation support, and community engagement activities to tackle the growing problem of drug abuse in Kerala.</p>
+                    <a href="#" class="btn btn-outline-primary mt-3">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light" id="stories">
+        <div class="container">
+            <h2 class="text-center mb-5">Recovery Stories</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="quote-text">
+                            <p class="mb-3">After years of struggle, I found the support I needed through this program. Now I'm 2 years clean and helping others on their journey to recovery.</p>
+                            <p class="fw-bold mb-0">- Rajesh, 28</p>
+                            <small class="text-muted">Thrissur</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="quote-text">
+                            <p class="mb-3">The awareness program at our school opened my eyes to the dangers of drug use. It helped me make better choices and stay away from peer pressure.</p>
+                            <p class="fw-bold mb-0">- Priya, 17</p>
+                            <small class="text-muted">Kochi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Take The Pledge</h2>
+            <p class="lead mb-4">Join thousands of Keralites who have pledged to say no to drugs and help create a healthier society.</p>
+            <a href="#" class="btn btn-light btn-lg">Sign The Pledge</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <p class="text-center mb-4">Need help or want to join our initiative? Reach out to us.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control">
+                                <option selected disabled>Select Reason for Contact</option>
+                                <option>I Need Help</option>
+                                <option>I Want to Volunteer</option>
+                                <option>General Inquiry</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger btn-lg btn-custom">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Helpline -->
+    <section class="py-4 bg-danger text-white">
+        <div class="container text-center">
+            <h3 class="mb-2">24/7 Drug Abuse Helpline</h3>
+            <p class="lead mb-0">Call <strong>1800-XXX-XXXX</strong> for immediate assistance</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Say No To Drugs - Kerala</h5>
+                    <p>Building a drug-free Kerala through education, awareness, and community action.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Resources</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Rehabilitation Centers</a></li>
+                        <li><a href="#" class="text-white">Educational Materials</a></li>
+                        <li><a href="#" class="text-white">Support Groups</a></li>
+                        <li><a href="#" class="text-white">Government Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2025 Say No To Drugs - Kerala. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Counter animation for stats
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start) + (obj.dataset.suffix || '%');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Trigger counter animation when scrolled into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.stats-counter').forEach(counter => {
+                        const value = parseFloat(counter.innerText);
+                        animateValue(counter, 0, value, 1500);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.stats-counter');
+        if (statsSection) {
+            observer.observe(statsSection.parentElement.parentElement);
+        }
+    </script>
+</body>
+
+</html>
